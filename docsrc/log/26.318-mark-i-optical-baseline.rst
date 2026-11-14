@@ -1,0 +1,15 @@
+:date: 2026-11-14
+:type: log
+:tags: elementarium, optics, fused-silica, brewster, mark-i, geometor-model
+
+===============================================================
+Inaugural Optical Specification & Mark I Desktop Bench Baseline
+===============================================================
+
+Initialized ``geometor.elementarium`` (`v0.1.0`) to establish the physical, optical, and constructive-geometric architecture for a :math:`10^5`-year passive fused-silica archive, anchored immediately on building the **Mark I Desktop Optical Prototype**.
+
+Engineering Milestones
+----------------------
+
+- **Four-Tier Passive Optical Stack** (:mod:`geometor.elementarium.tiers`): Defined concentric readout escalation across raw aperture shadow projection (``T0``), collimated chrome-on-quartz reticles (``T1``), crossed Brewster-angle birefringence (``T2``), and combinatorial/fiduciary cold-boot frames (``T3``). Formulated Brewster's angle in exact Rational Trigonometry via :math:`s_B = \frac{n_D^2}{1 + n_D^2} = \frac{8\,508\,889}{12\,508\,889}` for fused silica (:math:`n_D = \frac{2917}{2000}`).
+- **Mark I Benchtop Rail & Keystone Mask** (:mod:`geometor.elementarium.bench`, :mod:`geometor.elementarium.plates`): Constructed ``Plate 0`` (*Vesica Keystone*) in ``geometor.model`` with zero ``sp.Float`` approximations, deriving the self-verifying golden axial stations (:math:`u, u\phi, u\phi^2, u\phi^3`) and exporting a 1:1 ``50 mm × 50 mm`` SVG reticle mask.
