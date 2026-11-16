@@ -1,0 +1,123 @@
+geometor.elementarium.tiers
+===========================
+
+.. py:module:: geometor.elementarium.tiers
+
+.. autoapi-nested-parse::
+
+   Optical tier specifications and fused-silica physical constants.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.elementarium.tiers.FUSED_SILICA_ND
+   geometor.elementarium.tiers.TIERS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.elementarium.tiers.OpticalTier
+   geometor.elementarium.tiers.TiersMixin
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.elementarium.tiers.brewster_spread
+
+
+Module Contents
+---------------
+
+.. py:data:: FUSED_SILICA_ND
+   :type:  sympy.Rational
+
+   Nominal refractive index of fused silica (SiO2) at 589.3 nm (1.4585).
+
+.. py:function:: brewster_spread(refractive_index: sympy.Expr = FUSED_SILICA_ND) -> sympy.Expr
+
+   Compute exact Rational Trigonometry spread s_B = n^2 / (1 + n^2) for Brewster's angle.
+
+   Because tan(theta_B) = n, sin^2(theta_B) = n^2 / (1 + n^2) is strictly rational
+   whenever the refractive index is rational.
+
+   :param refractive_index: Exact symbolic refractive index n of the dielectric medium.
+
+   :returns: Exact symbolic spread s_B in [0, 1].
+
+
+.. py:class:: OpticalTier
+
+   Specification of a single passive readout stratum in the Elementarium stack.
+
+
+   .. py:attribute:: tier_id
+      :type:  str
+
+
+   .. py:attribute:: index
+      :type:  int
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: illumination
+      :type:  str
+
+
+   .. py:attribute:: physical_mechanism
+      :type:  str
+
+
+   .. py:attribute:: unlock_prerequisite
+      :type:  str
+
+
+   .. py:attribute:: information_role
+      :type:  str
+
+
+.. py:data:: TIERS
+   :type:  tuple[OpticalTier, ...]
+
+.. py:class:: TiersMixin
+
+   Mixin for Elementarium class containing optical tier query methods.
+
+
+   .. py:property:: tiers
+      :type: tuple[OpticalTier, ...]
+
+
+      Return all four passive optical readout tiers.
+
+
+   .. py:method:: get_tier(tier_id: str) -> OpticalTier
+
+      Retrieve an optical tier by identifier (e.g., ``'T0'``).
+
+      :param tier_id: Case-insensitive tier identifier ``T0``..``T3``.
+
+      :returns: Matching :class:`OpticalTier`.
+
+      :raises KeyError: If ``tier_id`` is not defined in :data:`TIERS`.
+
+
+
+   .. py:method:: fused_silica_brewster_spread() -> sympy.Expr
+
+      Return exact Brewster spread s_B for fused silica (n_D = 2917/2000).
+
+
+

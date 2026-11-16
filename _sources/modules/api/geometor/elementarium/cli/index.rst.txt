@@ -1,0 +1,37 @@
+geometor.elementarium.cli
+=========================
+
+.. py:module:: geometor.elementarium.cli
+
+.. autoapi-nested-parse::
+
+   Command-line interface for GEOMETOR Elementarium.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.elementarium.cli.build_parser
+   geometor.elementarium.cli.run_cli
+
+
+Module Contents
+---------------
+
+.. py:function:: build_parser() -> argparse.ArgumentParser
+
+   Build argument parser for the ``elementarium`` CLI.
+
+
+.. py:function:: run_cli(argv: Sequence[str] | None = None) -> int
+
+   Execute the ``elementarium`` CLI and return an exit status code.
+
+   :param argv: Optional command-line argument sequence; defaults to ``sys.argv[1:]``.
+
+   :returns: Zero on clean execution.
+
+

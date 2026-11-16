@@ -1,0 +1,27 @@
+geometor.elementarium.__main__
+==============================
+
+.. py:module:: geometor.elementarium.__main__
+
+.. autoapi-nested-parse::
+
+   Command-line entry point for ``python -m geometor.elementarium``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.elementarium.__main__.main
+
+
+Module Contents
+---------------
+
+.. py:function:: main() -> None
+
+   Invoke :func:`run_cli` and exit with its status code.
+
+

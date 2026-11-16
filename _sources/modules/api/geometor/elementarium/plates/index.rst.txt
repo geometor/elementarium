@@ -1,0 +1,122 @@
+geometor.elementarium.plates
+============================
+
+.. py:module:: geometor.elementarium.plates
+
+.. autoapi-nested-parse::
+
+   Mark I Primer plate catalog and 1:1 50mm reticle SVG mask exporter.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.elementarium.plates.PRIMER_PLATES
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.elementarium.plates.PrimerPlate
+   geometor.elementarium.plates.PlatesMixin
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.elementarium.plates.render_keystone_svg
+   geometor.elementarium.plates.export_plate_svg
+
+
+Module Contents
+---------------
+
+.. py:class:: PrimerPlate
+
+   Metadata for a single zero-context optical plate in the Mark I prototype.
+
+
+   .. py:attribute:: plate_id
+      :type:  str
+
+
+   .. py:attribute:: tier_id
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: substrate
+      :type:  str
+
+
+   .. py:attribute:: optical_encoding
+      :type:  str
+
+
+   .. py:attribute:: bootstrap_concept
+      :type:  str
+
+
+.. py:data:: PRIMER_PLATES
+   :type:  tuple[PrimerPlate, ...]
+
+.. py:function:: render_keystone_svg() -> str
+
+   Render a 1:1 50 mm x 50 mm SVG reticle mask for Plate 0 (Vesica Keystone).
+
+   Evaluates exact SymPy algebraic coordinates from :func:`build_keystone_plate_model`
+   strictly at the SVG serialization boundary, mapping unit chord ``|AB| = 1``
+   to ``unit_chord_mm = 20 mm`` centered on a ``50 mm x 50 mm`` quartz reticle.
+
+   :returns: Complete SVG document string with physical ``mm`` dimensions and ``.euclid-graphic`` styling.
+
+
+.. py:function:: export_plate_svg(output_path: pathlib.Path) -> pathlib.Path
+
+   Write the 1:1 50 mm x 50 mm Plate 0 SVG reticle mask to disk.
+
+   :param output_path: Destination file path for the generated SVG.
+
+   :returns: Resolved path to the written SVG file.
+
+
+.. py:class:: PlatesMixin
+
+   Mixin for Elementarium class providing Primer plate lookup and SVG export.
+
+
+   .. py:property:: plates
+      :type: tuple[PrimerPlate, ...]
+
+
+      Return the ordered Mark I Primer plate catalog.
+
+
+   .. py:method:: get_plate(plate_id: str) -> PrimerPlate
+
+      Look up a Primer plate by identifier (e.g., ``'P0'``).
+
+      :param plate_id: Case-insensitive plate identifier ``P0``..``P5``.
+
+      :returns: Matching :class:`PrimerPlate`.
+
+      :raises KeyError: If ``plate_id`` is not present in :data:`PRIMER_PLATES`.
+
+
+
+   .. py:method:: export_keystone_svg(output_path: pathlib.Path) -> pathlib.Path
+
+      Export Plate 0 (Vesica Keystone) 1:1 SVG reticle mask to ``output_path``.
+
+
+

@@ -1,0 +1,36 @@
+geometor.elementarium.elementarium
+==================================
+
+.. py:module:: geometor.elementarium.elementarium
+
+.. autoapi-nested-parse::
+
+   Main Elementarium coordinator composing optical tier, bench, and plate mixins.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.elementarium.elementarium.Elementarium
+
+
+Module Contents
+---------------
+
+.. py:class:: Elementarium
+
+   Bases: :py:obj:`geometor.elementarium.tiers.TiersMixin`, :py:obj:`geometor.elementarium.bench.BenchMixin`, :py:obj:`geometor.elementarium.plates.PlatesMixin`
+
+
+   Coordinator for the Elementarium optical specification and Mark I prototype.
+
+
+   .. py:method:: summary() -> dict[str, object]
+
+      Return a structured engineering summary of the Mark I Desktop Prototype.
+
+
+
