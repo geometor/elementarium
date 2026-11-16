@@ -1,12 +1,6 @@
-============
-Elementarium
-============
-
 *Passive optical archive and zero-context geometric bootstrap architecture for 100,000-year knowledge preservation.*
 
-Contemporary information systems suffer from an acute **Dead-Reader Paradox**: the denser our magnetic and solid-state storage becomes, the shorter its physical survival and the steeper the industrial chain required to read its first bit. Deprived of active electrical power, semiconductor fabs, character encodings, and living natural language, cloud and solid-state archives decay into unreadable noise within decades.
-
-**Elementarium** addresses deep-time preservation across a :math:`10^5`-year horizon by encoding foundational deductive, metrological, scientific, and computational knowledge directly into passive fused silica (:math:`\text{SiO}_2`). Nothing is required to initiate readout except **a beam of light and a projection surface**.
+``geometor.elementarium`` is the deep-time preservation codex of the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive. It addresses deep-time preservation across a :math:`10^5`-year horizon by encoding foundational deductive, metrological, scientific, and computational knowledge directly into passive fused silica (:math:`\text{SiO}_2`), requiring nothing to initiate readout except a beam of light and a projection surface.
 
 Core Engineering Principles
 ---------------------------
