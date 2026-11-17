@@ -3,6 +3,11 @@ GEOMETOR • elementarium
 
 **Visit the Online Archive:** https://geometor.github.io/elementarium/
 
+.. image:: docsrc/_static/plates/plate_0_keystone.svg
+   :alt: GEOMETOR • elementarium featured geometric construction
+   :target: https://geometor.github.io/elementarium/
+   :align: center
+
 **Elementarium • Zero-context optical bootstrap & 100,000-year geometric archive**
 
 Mission
