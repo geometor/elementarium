@@ -18,11 +18,11 @@ Mission
 Capabilities & Interactive Docs
 -------------------------------
 
-- **`Elementarium <https://geometor.github.io/elementarium/>`_** — Comprehensive technical specification and deep-time optical archive architecture.
-- **`Four-Tier Optical Stack <https://geometor.github.io/elementarium/architecture/>`_** — Concentric optical escalation from raw pinhole shadow projection (T0) to interferometric cold-boot machine layers (T3).
-- **`Zero-Context Geometric Primer <https://geometor.github.io/elementarium/primer/>`_** — Formal deductive primer establishing logic, equivalence, arithmetic, and proof from constructive geometry.
-- **`Mark I Desktop Prototype <https://geometor.github.io/elementarium/prototype/>`_** — Benchtop optical assembly and fused-silica reticle fabrication standards.
-- **`Dual-Observer Recovery Protocols <https://geometor.github.io/elementarium/recovery/>`_** — Systematic decoding procedures for biological observers and autonomous machine vision.
+- `Elementarium <https://geometor.github.io/elementarium/>`_ — Comprehensive technical specification and deep-time optical archive architecture.
+- `Four-Tier Optical Stack <https://geometor.github.io/elementarium/architecture/>`_ — Concentric optical escalation from raw pinhole shadow projection (T0) to interferometric cold-boot machine layers (T3).
+- `Zero-Context Geometric Primer <https://geometor.github.io/elementarium/primer/>`_ — Formal deductive primer establishing logic, equivalence, arithmetic, and proof from constructive geometry.
+- `Mark I Desktop Prototype <https://geometor.github.io/elementarium/prototype/>`_ — Benchtop optical assembly and fused-silica reticle fabrication standards.
+- `Dual-Observer Recovery Protocols <https://geometor.github.io/elementarium/recovery/>`_ — Systematic decoding procedures for biological observers and autonomous machine vision.
 
 Repository Contents
 -------------------
