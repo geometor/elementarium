@@ -3,6 +3,12 @@ GEOMETOR • elementarium
 
 **Visit the Online Archive:** https://geometor.github.io/elementarium/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • elementarium Medallion
+   :target: https://geometor.github.io/elementarium/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/_static/plates/plate_0_keystone.svg
    :alt: GEOMETOR • elementarium featured geometric construction
    :target: https://geometor.github.io/elementarium/
