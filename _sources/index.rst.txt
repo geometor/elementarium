@@ -8,6 +8,10 @@
 Elementarium
 ============
 
+.. image:: _static/medallion.svg
+   :alt: Elementarium Medallion
+   :class: repo-medallion-hero
+
 .. include:: intro.rst
 
 .. toctree::
